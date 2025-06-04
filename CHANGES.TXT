@@ -1,0 +1,140 @@
+Version 9.5
+
+þ If you are installing this version of Zygote over an older version
+  please delete the following files from your previous version,
+
+        ZYGOTE.CFG
+        ZYGOTE.LST
+        ZYGOTE.KBD
+
+þ Mouse support has been included in this version. In the terminal
+  window, the left button executes @GRABTEXT while the right button
+  executes @STAMPTEXT. If scroll lock is on, @STAMPTEXT will increment
+  the history pointer after every execution. If the mouse cursor
+  is moved to the top-right corner of the screen, the program will
+  fall into screen-saver mode. Moving the cursor to the top line
+  of the terminal screen and pressing the left button brings up
+  the help screen. Positioning the mouse cursor at the bottom of
+  the terminal screen and pressing the left button sends a
+  carriage return, while pressing the right button sends an escape
+  character (ascii value 27).
+
+þ Some have reported that Zygote ran into a runtime error when
+  executed from a path directory. The problem has been fixed. You
+  should be able to include Zygote's directory as a path directory,
+  and execute the program without any problem.
+
+þ There was a problem with hanging up the modem by sending it a hangup
+  string. The problem has been fixed.
+
+þ In the dialing menu, all entries that are toll-charge will be
+  displayed in darkgray while the other entries will be displayed
+  in lightgray. This should make it easier to differentiate between
+  non-toll and toll calls. If you don't have Z_LOCAL.DAT installed,
+  then all entries will be displayed in lightgray.
+
+þ It has come to my attention that some redistributions of the previous
+  ZYG-90.ZIP lacked the essential file ZYGOTE.OVR. If you are passing
+  Zygote along to a system, please include all the files in the
+  original archive. If you are unsure what each archive contains then
+  read the file content.txt.
+
+þ Due to the success of previous versions of Zygote, a new and lower
+  registration fee will be in effect. Thank you for your support.
+
+Version 8.7
+
+þ Some BBS software even though are set to display ANSI codes have been
+  known to include some VT100 codes. So if you are on a system that
+  does not scroll the screen, and you are currently emulating ANSI, then
+  try switching to VT100.
+
+þ Added the @batch.lst file capability for external protocols. Zygote will
+  create a file named BATCH.LST in its TEMP directory when you tag files
+  with the file directory lister.
+
+þ If your modem is in the on-line mode even though your modem is not
+  connected to a remote system, you can turn it off by sending the
+  command 'AT&C1' to the modem.
+
+þ Fixed the problem with the program showing "Missing Z_AREA0.DAT"
+  The Z_AREA0.DAT does not exist; it is not included with the release
+  of the program.
+
+þ The format for the .dir file has not changed for this version.
+
+Version 8.6
+
+þ There was another minor error in the program. The 'execute' field
+  in the dialing menu needed to be initialized.
+
+þ You can still use the zconvert.exe program to convert your v7.0 .DIR
+  file for this version; the format for v8.6 obviously haven't changed.
+
+Version 8.5
+
+þ In this version, the format of the .DIR file has been changed, again.
+  But this time, i've included a conversion program for it. The name of
+  this program is zconvert. Just type "zconvert" and follow the menu.
+  It should be very easy to use. So if you are using version 7.5 make
+  sure you run this program before loading up Zygote. A new 'execute'
+  feature has been added. So read the zygote.doc file for more
+  information.
+
+þ A few new functions have been added to this version. Read the zygote.doc
+  file or the help screen to find out what is new.
+
+þ Apparently on some computers, Zygote freezes during the creation of
+  the zygote.scl file. I think i have fixed this little problem. But if
+  you are one of those who had this problem and are still having this
+  problem, please let me know.
+
+þ Some cosmetic changes.
+
+Version 7.5
+
+þ Changes were made to the graphic interpreter modules. Hopefully, the VT100
+  emulator will work correctly now.
+
+þ Some cosmetic changes
+
+þ Other minor fixes
+
+Version 7.0
+
+þ The format for the notepad has changed. If you are using an older version
+  of Zygote you should get rid of the ZYGOTE.PAD file. Also now, the
+  program will place all the notepad files (*.PAD) in a directory off of
+  the Zygote directory. The directory will be named NOTEPAD\. The program
+  will automatically create it if you don't already have it. In the last
+  version, Zygote saved all the notepad entries in one file. In this version,
+  each entry is contained in its own file. This should make it more flexible.
+  It will, of course, be faster when reading from and writing to it.
+
+þ The format for the dialing directory file (*.DIR) has also changed. There
+  is a converter for upgrading. If you were using v6.0 then you can use
+  DIRCONV.EXE to convert your old .DIR file to the new .DIR format. Zygote
+  will read/write all .DIR files in a directory name PHONE\. The program
+  will create it if you don't already have it. After you use the converter
+  remember to place the newly converted file in the PHONE\ directory.
+
+þ If you registered v6.0 and used the host mode, you also need to get rid
+  of the old user file and message file. Zygote has new formats for these
+  two files also. Also now all host mode files will be placed in HOST\.
+  The program will create this directory too if you don't already have it.
+
+þ The Z_AREA?.DAT files also need to be placed in their own directory. The
+  directory name for these files is AREADATA\. Again, the program will
+  create the directory if you don't already have it. If you don't plan
+  to use these files (because they do take up a lot of space), then
+  just simply delete them. Zygote will still work either way.
+
+þ There are many more changes, but these are probably the most important
+  of the batch. I hope the changes I made are for the better. If not, hey
+  write to me and tell me.
+
+þ Make sure you read the document file (ZYGOTE.DOC). It is very important.
+  There are many new things in there you should know about.
+
+þ Type ZYGOTE to load the program. The program will decide if you need to
+  enter anything. Have fun.
